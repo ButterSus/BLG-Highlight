@@ -1,0 +1,59 @@
+$schema: 'https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json'
+name: BLG
+patterns:
+  - include: '#comment'
+  - include: '#keyword'
+  - include: '#return'
+  - include: '#expression'
+repository:
+  expression:
+    patterns:
+      - include: '#operator'
+      - include: '#statement'
+      - include: '#token'
+      - include: '#strings'
+      - include: '#word'
+  comment:
+    patterns:
+      - name: comment.line.number-sign
+        match: '#[^\n]*'
+  return:
+    patterns:
+      - name: variable.parameter
+        match: '=> *[\w.]+'
+  operator:
+    patterns:
+      - name: keyword.operator
+        match: '\+|\.|\*|!|->|\|'
+  keyword:
+    patterns:
+      - name: keyword.control
+        match: '\bstart *:'
+  statement:
+    patterns:
+      - name: support.class
+        match: '\b\w+ *: *\n'
+  token:
+    patterns:
+      - name: storage.type
+        match: '<[^\s>]+>'
+  strings:
+    patterns:
+      - name: string.quoted.double
+        match: '"(\\\\\"|[^\n\"])*"'
+        captures:
+          0:
+            patterns:
+              - name: constant.language
+                begin: "\\${"
+                end: "}"
+                patterns:
+                  - name: keyword.control
+                    match: '\b(ERROR|REASON)\b'
+              - name: constant.character.escape
+                match: "\\\\\\w"
+  word:
+    patterns:
+      - name: support.function
+        match: '\w+'
+scopeName: source.blgramm

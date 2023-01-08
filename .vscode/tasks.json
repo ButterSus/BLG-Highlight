@@ -1,0 +1,14 @@
+{
+    "version": "2.0.0",
+    "tasks": [{
+        "label": "compileYaml",
+        "command": "npx",
+        "args": [
+            "js-yaml",
+            "syntaxes/blgramm.tmLanguage.yaml",
+            ">",
+            "syntaxes/blgramm.tmLanguage.json"
+                ],
+        "type": "shell"
+    }]
+}

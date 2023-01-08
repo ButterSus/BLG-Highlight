@@ -1,0 +1,37 @@
+{
+  "name": "buttersus-s-language-grammar",
+  "displayName": "ButterSus's Language Grammar",
+  "description": "Support for BLG files",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "blgramm",
+        "aliases": [
+          "BLG",
+          "blgramm"
+        ],
+        "extensions": [
+          ".blgramm"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "blgramm",
+        "scopeName": "source.blgramm",
+        "path": "./syntaxes/blgramm.tmLanguage.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}

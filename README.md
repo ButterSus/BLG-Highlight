@@ -1,65 +1,26 @@
-# buttersus-s-language-grammar README
+# ButterSus's Language Grammar Syntax Highlighting
 
-This is the README for your extension "buttersus-s-language-grammar". After writing up a brief description, we recommend including the following sections.
+Visual Studio Code extension, that provides you basic syntax highlighting for your code. 🖌
 
-## Features
+> **Note:** This extension is still in development and can cause some unexpected bugs.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+<pre style="float:left; overflow-x: scroll; width: 50%; color: #bbbbbb;background-color: #282c34;font-family: Monocraft, 'Droid Sans Mono', 'monospace', monospace;font-weight: normal;font-size: 18px;line-height: 24px;white-space: pre;">
+<span style="color: #e06c75;">start:</span>
+<span style="color: #98c379;">statements</span><span style="color: #bbbbbb;"> </span><span style="color: #56b6c2;">&lt;ENDMARKER&gt;</span>
+<br />
+<span style="color: #676f7d;"># GENERAL STATEMENTS</span>
+<span style="color: #676f7d;"># ==================</span>
+<br />
+<span style="color: #61afef;">statements:</span>
+<span style="color: #98c379;">statement</span><span style="color: #e06c75;">+</span>
+<br />
+<span style="color: #61afef;">statement:</span>
+<span style="color: #e06c75;">.</span><span style="color: #98c379;">simple_statement</span><span style="color: #bbbbbb;"> </span><span style="color: #e06c75;">!</span><span style="color: #bbbbbb;">(</span><span style="color: #56b6c2;">&lt;NEWLINE&gt;</span><span style="color: #bbbbbb;"> </span><span style="color: #e06c75;">|</span><span style="color: #bbbbbb;"> </span><span style="color: #56b6c2;">&lt;;&gt;</span><span style="color: #bbbbbb;">) </span><span style="color: #e06c75;">-&gt;</span><span style="color: #bbbbbb;"> </span><span style="color: #e5c07b;">&quot;</span><span style="color: #56b6c2;">${</span><span style="color: #e06c75;">ERROR</span><span style="color: #56b6c2;">}</span><span style="color: #e5c07b;">Expected newline after statement:</span><span style="color: #56b6c2;">\n${</span><span style="color: #e06c75;">REASON</span><span style="color: #56b6c2;">}</span><span style="color: #e5c07b;">&quot;</span><span style="color: #bbbbbb;"> </span><span style="color: #d19a66;font-style: italic;">=&gt; ast.statement</span>
+<span style="color: #e06c75;">.</span><span style="color: #98c379;">compound_statement</span>
+</pre>
 
-For example if there is an image subfolder under your extension project workspace:
+## License
 
-\!\[feature X\]\(images/feature-x.png\)
+Licensed under of
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+* [MIT License](#BLG/blob/master/LICENSE)

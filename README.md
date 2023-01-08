@@ -4,7 +4,7 @@ Visual Studio Code extension, that provides you basic syntax highlighting for yo
 
 > **Note:** This extension is still in development and can cause some unexpected bugs.
 
-<pre style="float:left; overflow-x: scroll; width: 50%; color: #bbbbbb;background-color: #282c34;font-family: Monocraft, 'Droid Sans Mono', 'monospace', monospace;font-weight: normal;font-size: 18px;line-height: 24px;white-space: pre;">
+<pre style="overflow-x: scroll; width: 50%; color: #bbbbbb;background-color: #282c34;font-family: Monocraft, 'Droid Sans Mono', 'monospace', monospace;font-weight: normal;font-size: 18px;line-height: 24px;white-space: pre;">
 <span style="color: #e06c75;">start:</span>
 <span style="color: #98c379;">statements</span><span style="color: #bbbbbb;"> </span><span style="color: #56b6c2;">&lt;ENDMARKER&gt;</span>
 <br />
@@ -23,4 +23,4 @@ Visual Studio Code extension, that provides you basic syntax highlighting for yo
 
 Licensed under of
 
-* [MIT License](#BLG/blob/master/LICENSE)
+* [MIT License](LICENSE)
